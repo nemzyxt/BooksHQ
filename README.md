@@ -2,6 +2,20 @@
 
 Look up and find details on any book you wish
 
+## Screenshots
+
+### Book search
+
+![book_search](scrshots/pic1.png)
+
+### Books list
+
+![books_list](scrshots/pic2.png)
+
+### Book details
+
+![book_details](scrshots/pic3.png)
+
 ## Setup
 
 - Open the IDE of your choice, preferably Intellij IDEA
