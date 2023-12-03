@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextAlignment?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.bookshq.DetailsController" styleClass="details-container"  stylesheets="@styles.css">
+    <!-- Back button at the top -->
+    <Button text="Back" onAction="#handleBackButtonClick" styleClass="back-button"/>
+
+    <!-- Display the name property in the center of the scene -->
+    <Label fx:id="nameLabel" text="" textAlignment="CENTER" styleClass="name-label"/>
+
+    <!-- Display other properties as a list -->
+    <Label text="Height: " fx:id="heightLabel" styleClass="property-label"/>
+    <Label text="Age: " fx:id="ageLabel" styleClass="property-label"/>
+    <Label text="Birthday: " fx:id="birthdayLabel" styleClass="property-label"/>
+    <Label text="Net Worth: " fx:id="netWorthLabel" styleClass="property-label"/>
+    <Label text="Gender: " fx:id="genderLabel" styleClass="property-label"/>
+    <Label text="Nationality: " fx:id="nationalityLabel" styleClass="property-label"/>
+    <Label text="Is Alive: " fx:id="isAliveLabel" styleClass="property-label"/>
+</VBox>

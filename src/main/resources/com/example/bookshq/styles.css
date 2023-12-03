@@ -1,0 +1,56 @@
+/* styles.css */
+
+/* styles.css */
+
+.main-container {
+    -fx-background-color: #F4F4F4; /* Light gray background color */
+}
+
+.header-label {
+    -fx-font-size: 24; /* Larger font size for the header */
+    -fx-font-weight: bold; /* Bold font */
+}
+
+.center-container {
+    -fx-padding: 20; /* Padding around the center container */
+}
+
+.input-box {
+    -fx-spacing: 20; /* Adjust spacing between input elements */
+}
+
+.label {
+    -fx-font-size: 16; /* Font size for labels */
+}
+
+.text-field {
+    -fx-font-size: 16; /* Font size for text fields */
+}
+
+.action-button {
+    -fx-font-size: 16; /* Font size for action buttons */
+}
+
+.list-view {
+    -fx-pref-height: 300; /* Preferred height for the list view */
+}
+
+.details-container {
+    -fx-spacing: 10; /* Adjust spacing between elements */
+    -fx-padding: 20; /* Adjust padding around the container */
+}
+
+.back-button {
+    -fx-font-size: 14; /* Adjust font size */
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: white; /* White text color */
+}
+
+.name-label {
+    -fx-font-size: 24; /* Adjust font size */
+    -fx-font-weight: bold; /* Bold font */
+}
+
+.property-label {
+    -fx-font-size: 16; /* Adjust font size */
+}
