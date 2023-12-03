@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76eddd41-ad21-4793-a49d-99d936ff5e08" name="Changes" comment="Add UI for book details page">
+    <list default="true" id="76eddd41-ad21-4793-a49d-99d936ff5e08" name="Changes" comment="Update API url to point to Hapi-books API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bookshq/DetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bookshq/DetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bookshq/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bookshq/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/bookshq/details-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/bookshq/details-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/bookshq/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/bookshq/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701617849190</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update API url to point to Hapi-books API">
+      <created>1701620714931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701620714931</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +96,7 @@
     <MESSAGE value="Add org.json dependency" />
     <MESSAGE value="Finish up on books listing page" />
     <MESSAGE value="Add UI for book details page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UI for book details page" />
+    <MESSAGE value="Update API url to point to Hapi-books API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update API url to point to Hapi-books API" />
   </component>
 </project>

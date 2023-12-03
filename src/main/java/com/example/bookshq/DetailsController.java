@@ -3,16 +3,10 @@ package com.example.bookshq;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.json.JSONObject;
 
 public class DetailsController {
-
-    @FXML
-    private ImageView coverImageView;
-
     @FXML
     private Label nameLabel, authorsLabel, ratingLabel, createdEditionsLabel, yearLabel;
 
@@ -38,12 +32,6 @@ public class DetailsController {
         ratingLabel.setText("Rating: " + bookData.optDouble("rating", 0.0));
         createdEditionsLabel.setText("Created Editions: " + bookData.optInt("created_editions", 0));
         yearLabel.setText("Year: " + bookData.optInt("year", 0));
-
-        // Load book cover image
-        String coverUrl = bookData.optString("cover", "");
-        if (!coverUrl.isEmpty()) {
-            coverImageView.setImage(new Image(coverUrl));
-        }
     }
 
     // Method to handle the back button click
