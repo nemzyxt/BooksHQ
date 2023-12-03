@@ -15,8 +15,6 @@ import javafx.stage.Stage;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
-import java.io.IOException;
-
 public class HomeController {
     // Assuming you have a class level variable to hold your JSON string
     private JSONArray booksJsonArray = new JSONArray();
@@ -60,15 +58,16 @@ public class HomeController {
 
     @FXML
     private void handleGetInfoButtonClick() {
-        String apiKey = "vx6VNkE8Do7iHftxWoyPlw==yLBDyAnUFQT3CB11";
+        String apiKey = "f0b70fdb76msha134a466c9226e3p145f43jsn2053c8a3b0ef", host = "hapi-books.p.rapidapi.com";
         String bookName = bookNameTextField.getText();
 
         try {
-            URL url = new URL("https://api.api-ninjas.com/v1/celebrity?name=" + bookName);
+            URL url = new URL("https://hapi-books.p.rapidapi.com/search/" + bookName);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("X-Api-Key", apiKey);
+            connection.setRequestProperty("X-RapidAPI-Key", apiKey);
+            connection.setRequestProperty("X-RapidAPI-Host", host);
 
             int responseCode = connection.getResponseCode();
 

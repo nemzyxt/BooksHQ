@@ -27,8 +27,10 @@ public class DetailsController {
     public void initData(JSONObject bookData, Stage primaryStage, com.example.bookshq.HomeController homeController) {
         setHomeController(homeController);
         this.primaryStage = primaryStage;
+
         // Set book name centrally at the top
         String name = bookData.optString("name", "");
+        System.out.println(name);
         nameLabel.setText(name);
 
         // Set other properties

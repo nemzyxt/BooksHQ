@@ -14,7 +14,7 @@
     <Button text="Back" onAction="#handleBackButtonClick" styleClass="back-button" BorderPane.alignment="TOP_LEFT"/>
 
     <!-- Display the book name centrally placed at the top -->
-    <Label fx:id="nameLabel" text="" textAlignment="CENTER" styleClass="name-label" BorderPane.alignment="TOP_CENTER"/>
+    <Label fx:id="nameLabel" text="" textAlignment="CENTER" styleClass="name-label" BorderPane.alignment="CENTER"/>
 
     <!-- Two columns layout for book cover and details -->
     <HBox spacing="20" BorderPane.alignment="CENTER">
