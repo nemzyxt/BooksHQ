@@ -1,6 +1,5 @@
 package com.example.bookshq;
 
-import com.example.bookshq.HomeController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,11 +18,11 @@ public class BooksHQ extends Application {
         this.primaryStage = stage;
 
         // Load the first scene
-        FXMLLoader helloLoader = new FXMLLoader(BooksHQ.class.getResource("home-view.fxml"));
-        Parent helloRoot = helloLoader.load();
-        homeController = helloLoader.getController();
+        FXMLLoader homeLoader = new FXMLLoader(BooksHQ.class.getResource("home-view.fxml"));
+        Parent homeRoot = homeLoader.load();
+        homeController = homeLoader.getController();
 
-        Scene scene1 = new Scene(helloRoot, 640, 480);
+        Scene scene1 = new Scene(homeRoot, 640, 480);
 
         // Set the controller for the first scene
         homeController.setMainApp(this);

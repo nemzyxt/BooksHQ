@@ -94,10 +94,10 @@ public class HomeController {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                     // Extract the "name" property from the JSONObject
-                    String celebrityNameProp = jsonObject.optString("name", "");
+                    String bookNameProp = jsonObject.optString("name", "");
 
-                    // Add the celebrityName to the ListView
-                    booksListView.getItems().add(celebrityNameProp);
+                    // Add the bookName to the ListView
+                    booksListView.getItems().add(bookNameProp);
                 }
 
                 // Set the JSON response

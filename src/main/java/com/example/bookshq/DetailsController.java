@@ -3,14 +3,18 @@ package com.example.bookshq;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.json.JSONObject;
 
 public class DetailsController {
 
     @FXML
-    private Label nameLabel, heightLabel, ageLabel, birthdayLabel,
-            netWorthLabel, genderLabel, nationalityLabel, isAliveLabel;
+    private ImageView coverImageView;
+
+    @FXML
+    private Label nameLabel, authorsLabel, ratingLabel, createdEditionsLabel, yearLabel;
 
     private Stage primaryStage;
     private com.example.bookshq.HomeController homeController;
@@ -20,20 +24,24 @@ public class DetailsController {
     }
 
     // Method to initialize data in the second scene
-    public void initData(JSONObject celebrityData, Stage primaryStage, com.example.bookshq.HomeController homeController) {
+    public void initData(JSONObject bookData, Stage primaryStage, com.example.bookshq.HomeController homeController) {
         setHomeController(homeController);
         this.primaryStage = primaryStage;
-        String name = celebrityData.optString("name", "");
+        // Set book name centrally at the top
+        String name = bookData.optString("name", "");
         nameLabel.setText(name);
 
-        // Set other properties as a list
-        heightLabel.setText("Height: " + celebrityData.optDouble("height", 0.0));
-        ageLabel.setText("Age: " + celebrityData.optInt("age", 0));
-        birthdayLabel.setText("Birthday: " + celebrityData.optString("birthday", ""));
-        netWorthLabel.setText("Net Worth: " + celebrityData.optDouble("net_worth", 0.0));
-        genderLabel.setText("Gender: " + celebrityData.optString("gender", ""));
-        nationalityLabel.setText("Nationality: " + celebrityData.optString("nationality", ""));
-        isAliveLabel.setText("Is Alive: " + celebrityData.optBoolean("is_alive", false));
+        // Set other properties
+        authorsLabel.setText("Authors: " + bookData.optString("authors", ""));
+        ratingLabel.setText("Rating: " + bookData.optDouble("rating", 0.0));
+        createdEditionsLabel.setText("Created Editions: " + bookData.optInt("created_editions", 0));
+        yearLabel.setText("Year: " + bookData.optInt("year", 0));
+
+        // Load book cover image
+        String coverUrl = bookData.optString("cover", "");
+        if (!coverUrl.isEmpty()) {
+            coverImageView.setImage(new Image(coverUrl));
+        }
     }
 
     // Method to handle the back button click
